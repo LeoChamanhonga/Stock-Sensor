@@ -25,6 +25,9 @@ namespace Stock_Sensor.Controllers
                 return View(login);
 
             }
+            var achou = (login.Utilizador == "nuno" && login.Senha == "123");
+
+            
             return View(login);
         }
     }
