@@ -26,7 +26,7 @@ namespace Stock_Sensor.Controllers
                 return View(login);
 
             }
-            var achou = (login.Utilizador == "nuno" && login.Senha == "123");
+            var achou = UtilizadorModel.ValidarUtilizador (login.Utilizador, login.Senha);
 
             if (achou)
             {
