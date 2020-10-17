@@ -8,11 +8,12 @@ namespace Stock_Sensor.Controllers
 {
     public class GraficoController : Controller
     {
-        // GET: Grafico
+        [Authorize]
         public ActionResult PerdaMes()
         {
             return View();
         }
+        [Authorize]
         public ActionResult EntradaSaida()
         {
             return View();

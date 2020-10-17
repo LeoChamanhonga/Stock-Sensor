@@ -8,11 +8,12 @@ namespace Stock_Sensor.Controllers
 {
     public class RelatorioController : Controller
     {
-        // GET: Relatorio
+        [Authorize]
         public ActionResult EstadoStock()
         {
             return View();
         }
+        [Authorize]
         public ActionResult Encomenda()
         {
             return View();

@@ -6,19 +6,13 @@ using System.Web.Mvc;
 
 namespace Stock_Sensor.Controllers
 {
-    public class HomeController : Controller
+    public class ContaController : Controller
     {
-        [Authorize]
-        public ActionResult Index()
+        [AllowAnonymous]
+        public ActionResult Login(string returnUrl)
         {
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
-        [Authorize]
-        public ActionResult Sobre()
-        {
-            return View();
-        }
-
-
     }
 }
