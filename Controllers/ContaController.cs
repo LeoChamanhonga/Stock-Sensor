@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace Stock_Sensor.Controllers
 {
@@ -27,7 +28,10 @@ namespace Stock_Sensor.Controllers
             }
             var achou = (login.Utilizador == "nuno" && login.Senha == "123");
 
-            
+            if (achou)
+            {
+                FormsAuthentication.SetAuthCookie(login.Utilizador, login.LembrarMe);
+            }
             return View(login);
         }
     }
