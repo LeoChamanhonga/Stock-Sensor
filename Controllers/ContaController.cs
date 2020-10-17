@@ -31,6 +31,14 @@ namespace Stock_Sensor.Controllers
             if (achou)
             {
                 FormsAuthentication.SetAuthCookie(login.Utilizador, login.LembrarMe);
+                if (Url.IsLocalUrl(returnUrl))
+                {
+                    return Redirect(returnUrl);
+                }
+                else
+                {
+                    RedirectToAction("Index", "Home");
+                }
             }
             return View(login);
         }
