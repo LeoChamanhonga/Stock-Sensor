@@ -6,19 +6,17 @@ using System.Web.Mvc;
 
 namespace Stock_Sensor.Controllers
 {
-    public class HomeController : Controller
+    public class GraficoController : Controller
     {
         [Authorize]
-        public ActionResult Index()
+        public ActionResult PerdaMes()
         {
             return View();
         }
         [Authorize]
-        public ActionResult Sobre()
+        public ActionResult EntradaSaida()
         {
             return View();
         }
-
-
     }
 }

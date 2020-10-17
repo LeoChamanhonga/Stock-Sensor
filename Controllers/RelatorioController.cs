@@ -6,19 +6,18 @@ using System.Web.Mvc;
 
 namespace Stock_Sensor.Controllers
 {
-    public class HomeController : Controller
+    public class RelatorioController : Controller
     {
         [Authorize]
-        public ActionResult Index()
+        public ActionResult EstadoStock()
         {
             return View();
         }
         [Authorize]
-        public ActionResult Sobre()
+        public ActionResult Encomenda()
         {
             return View();
         }
-
 
     }
 }

@@ -120,10 +120,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ContaController.cs" />
+    <Compile Include="Controllers\GraficoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OperacaoController.cs" />
+    <Compile Include="Controllers\RegistoController.cs" />
+    <Compile Include="Controllers\RelatorioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -161,10 +167,29 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Sobre.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Grafico\PerdaMes.cshtml" />
+    <Content Include="Views\Grafico\EntradaSaida.cshtml" />
+    <Content Include="Views\Operacao\EntradaStock.cshtml" />
+    <Content Include="Views\Operacao\SaidaStock.cshtml" />
+    <Content Include="Views\Operacao\LancPerdas.cshtml" />
+    <Content Include="Views\Operacao\Inventarios.cshtml" />
+    <Content Include="Views\Registo\GrupoProduto.cshtml" />
+    <Content Include="Views\Registo\MarcaProduto.cshtml" />
+    <Content Include="Views\Registo\LocalArmazenamento.cshtml" />
+    <Content Include="Views\Registo\UnidadeMedida.cshtml" />
+    <Content Include="Views\Registo\Produto.cshtml" />
+    <Content Include="Views\Registo\Pais.cshtml" />
+    <Content Include="Views\Registo\Provincia.cshtml" />
+    <Content Include="Views\Registo\Cidade.cshtml" />
+    <Content Include="Views\Registo\Fornecedor.cshtml" />
+    <Content Include="Views\Registo\PerfilUtilizador.cshtml" />
+    <Content Include="Views\Registo\Utilizador.cshtml" />
+    <Content Include="Views\Relatorio\EstadoStock.cshtml" />
+    <Content Include="Views\Relatorio\Encomenda.cshtml" />
+    <Content Include="Views\Conta\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
