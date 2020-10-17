@@ -39,6 +39,11 @@ namespace Stock_Sensor.Controllers
                 {
                     RedirectToAction("Index", "Home");
                 }
+
+            }
+            else
+            {
+                ModelState.AddModelError("", "Login Invalido.");
             }
             return View(login);
         }
