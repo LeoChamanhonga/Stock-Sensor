@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Stock_Sensor.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,17 @@ namespace Stock_Sensor.Controllers
 {
     public class RegistoController : Controller
     {
+        private static List<GrupoProdutoModel> _listaGrupoProduto = new List<GrupoProdutoModel>()
+        {
+            new GrupoProdutoModel() {Id=1, Nome="Livros", Ativo=true},
+            new GrupoProdutoModel() {Id=2, Nome="canetas", Ativo=true},
+            new GrupoProdutoModel() {Id=3, Nome="Copos", Ativo=true}
+        };
+
         [Authorize]
         public ActionResult GrupoProduto()
         {
-            return View();
+            return View(_listaGrupoProduto);
         }
         [Authorize]
         public ActionResult MarcaProduto()
