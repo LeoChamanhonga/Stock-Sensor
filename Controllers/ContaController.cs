@@ -47,5 +47,12 @@ namespace Stock_Sensor.Controllers
             }
             return View(login);
         }
+        [HttpPost]
+        [AllowAnonymous]
+        public ActionResult LogOff()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
