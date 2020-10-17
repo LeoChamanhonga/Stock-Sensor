@@ -16,6 +16,8 @@ namespace Stock_Sensor.Controllers
             return View();
         }
 
+        [HttpPost]
+        [AllowAnonymous]
         public ActionResult Login(LoginViewModel login, string returnUrl)
         {
             if (!ModelState.IsValid)
