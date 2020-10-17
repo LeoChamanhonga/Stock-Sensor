@@ -11,8 +11,10 @@
             <div class="col-md-12">
                 <div class="box">
                     <div id="cabecalho_grid" class="row">
-                        <a id="btn_Adicionar" class="btn btn-success" role="button"><i class="glyphicon glyphicon-plus"> Adicionar</i></a>
+                        <div class="col-md-12">
 
+                            <a id="btn_Adicionar" class="btn btn-success" role="button"><i class="glyphicon glyphicon-plus"> Adicionar</i></a>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -29,7 +31,7 @@
                                     {
                                         <tr>
                                             <td>@item.Nome</td>
-                                            <td>@item.Ativo</td>
+                                            <td>@{var ativo = (item.Ativo ? "SIM" : "NAO");}@ativo</td>
                                             <td>
                                                 <a class="btn btn-primary btn-alterar" role="button"><i class="glyphicon glyphicon-pencil"> Alterar</i></a>
                                                 <a class="btn btn-danger btn-excluir" role="button"><i class="glyphicon glyphicon-trash"> Excluir</i></a>
